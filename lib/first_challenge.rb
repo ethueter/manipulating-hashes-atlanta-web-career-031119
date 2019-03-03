@@ -23,6 +23,6 @@ def first_challenge
   
  
   
-  contacts
+  contacts["Freddy Mercury"][:favorite_icecream_flavors]
 end
 
