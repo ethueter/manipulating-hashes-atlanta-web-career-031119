@@ -1,3 +1,4 @@
+require 'pry'
 def first_challenge
   contacts = {
     "Jon Snow" => {
@@ -13,10 +14,14 @@ def first_challenge
     }
   }
 
-  #your code here
+  contacts.each do |x, y|
+    if x == "favorite_icecream_flavors:"
+      y.delete_if {|z| z == "strawberry"}
+    end 
+  end 
 
-
-  #remember to return your newly altered contacts hash!
-  contacts
+binding.pry 
+  
+  contacts["Freddy Mercury"][:favorite_icecream_flavors]
 end
 
