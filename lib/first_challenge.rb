@@ -14,13 +14,14 @@ def first_challenge
     }
   }
 
-  contacts.each do |x, y|
+  contacts.each do |a, b|
+    b.each do |x, y|
     if x == "favorite_icecream_flavors:"
       y.delete_if {|z| z == "strawberry"}
     end 
   end 
 
-binding.pry 
+ 
   
   contacts["Freddy Mercury"][:favorite_icecream_flavors]
 end
